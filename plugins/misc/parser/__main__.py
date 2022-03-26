@@ -11,13 +11,14 @@
 # Plugin By @ZekXtreme
 # Base Script by <https://github.com/xcscxr>
 
-import re
-import json
 import base64
+import json
+import re
 from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
+
 from userge import Message, userge, pool
 from .. import parser
 
@@ -154,7 +155,7 @@ async def gdtot(message: Message):
 
 @userge.on_cmd("appdrive", about={
     'header': "parse appdrive links",
-    'description': "you have to set <code>Required Vars</code>.\nget it by reading"
+    'description': "you have to set <code>Required Vars</code>.\nget it by reading "
                    "<a href='https://t.me/UsergePlugins/129'>Help</a>",
     'usage': "{tr}appdrive appdrive_link"})
 async def appdrive(message: Message):
